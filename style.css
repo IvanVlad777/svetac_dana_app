@@ -1,0 +1,177 @@
+body {
+  max-width: 1200px;
+  margin: auto;
+  font-family: 'Source Sans Pro', Helvetica, sans-serif;
+}
+.heading {
+  background-color: rgb(149, 139, 43);
+  margin: auto;
+  /* width: 50%; */
+  text-align: center;
+  color: white;
+}
+
+.app {
+  background-color: #f7f5e7;
+  margin: auto;
+  /* width: 50%; */
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  column-gap: 20px;
+}
+
+.name {
+  text-align: center;
+}
+
+.description {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  column-gap: 20px;
+  line-height: 1.4;
+}
+
+.image {
+  flex-basis: auto;
+  border: cadetblue;
+  padding: 10px;
+  height: 400px;
+  width: 300;
+}
+
+.picture {
+  border-radius: 50%;
+}
+
+.bio {
+  padding: 10px;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.quote {
+  font-style: italic;
+}
+
+.search {
+  flex-basis: auto;
+  width: 200px;
+  padding: 10px;
+  margin-right: 20px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.day {
+  display: flex;
+}
+.month {
+  display: flex;
+}
+
+.day_month_text {
+  width: 60px;
+}
+
+.input {
+  width: 30px;
+  font-size: 20px;
+  margin: 10px auto;
+}
+
+.button {
+  width: 100px;
+  height: 40px;
+  background-color: bisque;
+  text-align: center;
+  margin: 10px auto;
+  border-radius: 30%;
+}
+
+.button:hover {
+  background-color: rgb(255, 207, 148);
+}
+
+.date {
+  text-align: center;
+  font-size: 20px;
+}
+
+.impressum {
+  padding: 10px;
+}
+
+/* under 860px */
+
+@media only screen and (max-width: 860px) {
+  .description {
+    flex-direction: column;
+  }
+  .image {
+    text-align: center;
+    display: none;
+  }
+  .app {
+    flex-direction: column-reverse;
+  }
+  .search {
+    text-align: center;
+    margin: auto;
+    width: 450px;
+  }
+
+  .date {
+    order: 5;
+  }
+  .day_month_container {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .buttons_div {
+    display: flex;
+  }
+
+  .name_class {
+    margin: 0px auto 7px auto;
+  }
+  .date_class {
+    margin: 7px auto 0px auto;
+  }
+  /* .day {
+    flex-direction: column;
+  }
+
+  .month {
+    flex-direction: column;
+  }
+
+  .day_month_text {
+    width: auto;
+  } */
+}
+
+@media only screen and (max-width: 450px) {
+  .button__today {
+    display: none;
+  }
+
+  .search {
+    text-align: center;
+    margin: auto;
+    width: 320px;
+  }
+  .day_month_container {
+    justify-content: left;
+  }
+  .day {
+    margin: auto 10px auto 20px;
+  }
+  .month {
+    margin: auto 10px auto 65px;
+  }
+}
